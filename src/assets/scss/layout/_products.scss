@@ -1,0 +1,176 @@
+.products-container{
+    max-width: 1190px ;
+    .products{
+        margin: 50px 0;
+        .title{
+            @include font(3.5, 50, 600);
+            color: $title-color;
+            padding: 0 20px ;
+
+        }
+        &-swiper{
+            margin-top: 35px;
+            // border: 1px solid red;
+            padding: 0 20px !important;
+            .swiper-slide{
+                border: 1.5px solid #EAEBED;
+                width: 255px;
+                border-radius: 10px;
+                overflow: hidden;
+                &__img{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    min-height: 230px;
+                    background: #F0F1F5;
+                    border-radius: 10px 10px 0 0 ;
+                    position: relative;
+                    .xit{
+                        background: #EE685F;
+                        border-radius: 5px;
+                        padding: 4px 9px;
+                        @include font(1.2, 17, 500);
+                        position: absolute;
+                        top: 10px;
+                        left: 10px;
+                    }
+                    .new{
+                        background: #75D14A;
+                        border-radius: 5px;
+                        padding: 4px 9px;
+                        @include font(1.2, 17, 500);
+                        position: absolute;
+                        top: 10px;
+                        left: 10px; 
+                    }
+                    .comparise-btn{
+                        position: absolute;
+                        top: 10px;
+                        right: 10px;
+                        background: none;
+                        width: 40px;
+                        height: 40px;
+                        border: 1px solid #5d6c7b;
+                        border-radius: 50%;
+                        display: grid;
+                        place-items: center;
+                        svg{
+                           width: 24px;
+                           height: 24px; 
+                        }
+                        svg path{
+                            fill: #5d6c7b;
+                        }
+                    }
+                    .in-stock{
+                        position: absolute;
+                        bottom: 7px;
+                        left: 10px;
+                        p{
+                            @include font(1.4, 20, 400);
+                            color: #5d6c7b;
+                        }
+                    }
+                    img{
+                        width: 70%;
+                        height: 70%;
+                        object-fit: contain;
+                    }
+                }
+                &__wrapper{
+                    padding: 20px;
+                    .title{
+                        padding-left: 0;
+                        @include font(1.8, 26, 600);
+                        color: $title-color;
+                        margin-bottom: 20px;
+                    }
+                    &__options{
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        row-gap: 15px;
+                        .item{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            width: calc(100% / 2);
+                            span{
+                                @include font(1.4, 16, 400);
+                                color: #5D6C7B;
+                            }
+                        }
+                    }
+                }
+                &__price__options{
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .prices{
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        .price{
+                            @include font(1.2, 17, 500);
+                            color: #5D6C7B;
+                            text-decoration: line-through;
+                        }
+                        .discount-price{
+                            @include font(2, 28, 600);
+                            color: $title-color;
+                        }
+                    }
+                    .options{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        button{
+                            background: none;
+                            width: 40px;
+                            height: 40px;
+                            border: 1px solid #5d6c7b;
+                            border-radius: 50%;
+                            display: grid;
+                            place-items: center;
+                            cursor: pointer;
+                            svg{
+                                width: 22px;
+                                height: 22px;
+                            }
+                            svg path{
+                                fill: #5d6c7b;
+                            }
+                        }
+                    }
+                }
+            }
+            .swiper-button-next{
+                width: 40px;
+                height: 40px;
+                border: 1px solid #24a19c;
+                border-radius: 50%;
+                position: absolute;
+                right: 0px;
+                background-color: #fff;
+                &::after{
+                    @include font(1.5, 20, 700);
+                    color: #24a19c;
+                }
+            }
+            .swiper-button-prev{
+                width: 40px;
+                height: 40px;
+                border: 1px solid #24a19c;
+                border-radius: 50%;
+                background-color: #fff;
+                position: absolute;
+                left: 0;
+                &::after{
+                    @include font(1.4, 20, 600);
+                    color: #24a19c;
+                }
+            }
+        }
+    }
+}

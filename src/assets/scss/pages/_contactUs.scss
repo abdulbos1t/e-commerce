@@ -1,0 +1,211 @@
+.contact-us{
+    padding-bottom: 128px;
+    padding-top: 120px;
+    // border: 1px solid red;
+    position: relative;
+    overflow: hidden;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        z-index: 5;
+        @include responsive(t-tables){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    &__left{
+        width: 69%;
+        // border: 1px solid red;
+        @include responsive(m-phone){
+            width: 90%;
+        }
+        h1{
+            @include font(6.4, 100, 700);
+        }
+        h2{
+            @include font(3.2, 48, 700);
+            color: $pink;
+            margin-bottom: 30px;
+        }
+        .contact-us__items{
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            &__item{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                p{
+                    text-align: left;
+                    @include font(1.8, 28, 700);
+                    @include responsive(m-phone){
+                        @include font(1.5, 20, 700)
+                    }
+                }
+            }
+        }
+    }
+    &__right{
+        // border: 1px solid yellow;
+        width: 69%;
+        @include responsive(t-tables){
+            margin-top: 50px;
+        }
+        @include responsive(m-phone){
+            width: 90%;
+        }
+        form{
+            .name{
+                width: 100%;
+                position: relative;
+                // height: 50px;
+                overflow: hidden;
+                margin-bottom: 10px;
+                input{
+                    padding: 10px;
+                    width: 100%;
+                    height: 100%;
+                    color: #fff;
+                    padding-top: 20px;
+                    border: none;
+                    background-color: transparent;
+                    border-bottom: 1px solid white;
+                    &:placeholder-shown{
+                        @include font(1.5, 25, 600);
+                        // color: rgb(255, 255, 255, 0.9);
+                    }
+                    // &:focus + .label-name .content-name,
+                    // .form input:valid + .label-name .content-name {
+                    //   transform: translateY(-60%);
+                    //   font-size: 14px;
+                    //   left: 0px;
+                    // }
+                    // &:focus + .label-name::after,
+                    // .form input:valid + .label-name::after {
+                    // transform: translateX(0%);
+                    // }
+                    
+                }
+                label{
+                    position: absolute;
+                    bottom: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    pointer-events: none;
+                    border-bottom: 1px solid white;
+                    // &::after{
+                    //     content: "";
+                    //     position: absolute;
+                    //     bottom: -1px;
+                    //     left: 0px;
+                    //     width: 100%;
+                    //     height: 100%;
+                    //     border-bottom: 3px solid #fce38a;
+                    //     transform: translateX(-100%);
+                    //     transition: all 0.3s ease;
+                    // }
+                    .content-name{
+                        @include font(1.5, 25, 600);
+                        color: rgb(255, 255, 255, 0.6);
+                        position: absolute;
+                        bottom: 0px;
+                        left: 0px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-bottom: 5px;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+            textarea{
+                padding: 10px;
+                width: 100%;
+                height: 133px;
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: #fff;
+                resize: none;
+                border-bottom: 1px solid #fff;
+                margin-bottom: 20px;
+                // overflow-y: scroll;
+                &:placeholder-shown{
+                    @include font(1.5, 25, 600);
+                    color: rgb(255, 255, 255, 1);
+                }
+            }
+            button{
+                @include font(1.8, 28, 600);
+                color: #004047;
+                padding: 9px 30px;
+                background-color: $white;
+                border-radius: 50px;
+            }
+        }
+    }
+    .contact1{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
+        @include responsive(m-phone){
+            bottom: -100px;
+        }
+        
+    }
+    .contact2{
+        position: absolute;
+        right: 0;
+        bottom: 25px;
+        z-index: 1;
+        @include responsive(m-phone){
+            bottom: -80px;
+        }
+    }
+    .contact3{
+        position: absolute;
+        bottom: 182px;
+        right: 57px;
+        z-index: 3;
+        @include responsive(m-phone){
+            bottom: 83px;
+        }
+    }
+    .contact4{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        @include responsive(m-phone){
+            display: none;
+        }
+    }
+    .contact5{
+        position: absolute;
+        top: 56px;
+        z-index: 3;
+        left: 0;  
+        @include responsive(m-phone){
+            display: none;
+        }
+    }
+    .contact6{
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        @include responsive(m-phone){
+            display: none;
+        }
+    }
+    .contact7{
+        position: absolute;
+        top: 100px;
+        left: 47px;
+        z-index: 4;
+        @include responsive(m-phone){
+            display: none;
+        }
+    }
+}

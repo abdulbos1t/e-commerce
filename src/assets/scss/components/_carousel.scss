@@ -1,0 +1,46 @@
+.mySwiper{
+    height: 400px;
+    background: radial-gradient(58.73% 541.94% at 75.14% 62.23%, #A6A9FF 0%, #6F73EE 100%);
+    margin: 30px 0;
+    .swiper-slide{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        overflow: hidden;
+        cursor: pointer;
+        width: 100%;
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+        .dostavka{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .swiper-button-next{
+        background-color: $white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        &::after{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $black;
+        }
+    }
+    .swiper-button-prev{
+        background-color: $white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        &::after{
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: $black;
+        }
+    }
+}

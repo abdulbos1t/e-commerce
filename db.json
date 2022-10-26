@@ -1,0 +1,226 @@
+{
+  "products": [
+    {
+      "id": "p01",
+      "quantity": 0,
+      "name": "iPhone 14 Pro Max",
+      "image": "/png/iphone-14.jpg",
+      "isNew": true,
+      "isXit": false,
+      "amount": 5,
+      "productDetails": [
+        {
+          "id": "d01",
+          "battery": "4000 mAh",
+          "power": "4.2 ГГц.",
+          "speed": "apple a16 Bionic",
+          "hour": "13 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1599,
+        "disPrice": 1299
+      }
+    },
+    {
+      "id": "p02",
+      "quantity": 0,
+      "name": "Asus Vivobook",
+      "image": "/png/pr01.png",
+      "isNew": true,
+      "isXit": false,
+      "amount": 25,
+      "productDetails": [
+        {
+          "id": "d02",
+          "battery": "12000 mAh",
+          "power": "4.2 ГГц.",
+          "speed": "core i9 11Gen",
+          "hour": "13 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 10990,
+        "disPrice": 9990
+      }
+    },
+    {
+      "id": "p03",
+      "quantity": 0,
+      "name": "Acer Aspire 5",
+      "image": "/png/pr02.png",
+      "isNew": false,
+      "isXit": true,
+      "amount": 15,
+      "productDetails": [
+        {
+          "id": "d03",
+          "battery": "5000 mAh",
+          "power": "3.3 ГГц.",
+          "speed": "core i7 11Gen",
+          "hour": "7 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 8990,
+        "disPrice": 7990
+      }
+    },
+    {
+      "id": "p04",
+      "quantity": 0,
+      "name": "Hp Pavilion",
+      "image": "/png/pr03.png",
+      "isNew": true,
+      "isXit": false,
+      "amount": 5,
+      "productDetails": [
+        {
+          "id": "d04",
+          "battery": "2000 mAh",
+          "power": "2,2 ГГц",
+          "speed": "core i5 11Gen",
+          "hour": "6 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 7990,
+        "disPrice": 6990
+      }
+    },
+    {
+      "id": "p05",
+      "quantity": 0,
+      "name": "Samsung Galaxy S21",
+      "image": "/png/galaxy-s21.png",
+      "isNew": false,
+      "isXit": true,
+      "amount": 4,
+      "productDetails": [
+        {
+          "id": "d05",
+          "battery": "4500 mAh",
+          "power": "3,3 ГГц",
+          "speed": "Snapdragon 888",
+          "hour": "46 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1200,
+        "disPrice": 1099
+      }
+    },
+    {
+      "id": "p06",
+      "quantity": 0,
+      "name": "iPhone 13 Pro Max",
+      "image": "/png/iphone-13.png",
+      "isNew": false,
+      "isXit": true,
+      "amount": 3,
+      "productDetails": [
+        {
+          "id": "d06",
+          "battery": "3500 mAh",
+          "power": "2,2 ГГц",
+          "speed": "apple a15 Bionic",
+          "hour": "36 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1500,
+        "disPrice": 1399
+      }
+    },
+    {
+      "id": "p07",
+      "quantity": 0,
+      "name": "Xiaomi 11 Ultra",
+      "image": "/png/xiaomi-11.png",
+      "isNew": false,
+      "isXit": true,
+      "amount": 7,
+      "productDetails": [
+        {
+          "id": "d07",
+          "battery": "5000 mAh",
+          "power": "2,1 ГГц",
+          "speed": "Snapdragon 888",
+          "hour": "42 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 900,
+        "disPrice": 799
+      }
+    },
+    {
+      "id": "p08",
+      "quantity": 0,
+      "name": "Samsung Galaxy S22 Ultra",
+      "image": "/png/galaxy-s22.webp",
+      "isNew": true,
+      "isXit": true,
+      "amount": 7,
+      "productDetails": [
+        {
+          "id": "d08",
+          "battery": "5000 mAh",
+          "power": "3,3 ГГц",
+          "speed": "Snapdragon 888",
+          "hour": "48 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1300,
+        "disPrice": 1000
+      }
+    }
+  ],
+  "cart": [
+    {
+      "id": "p05",
+      "quantity": 0,
+      "name": "Samsung Galaxy S21",
+      "image": "/png/galaxy-s21.png",
+      "isNew": false,
+      "isXit": true,
+      "amount": 4,
+      "productDetails": [
+        {
+          "id": "d05",
+          "battery": "4500 mAh",
+          "power": "3,3 ГГц",
+          "speed": "Snapdragon 888",
+          "hour": "46 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1200,
+        "disPrice": 1099
+      }
+    },
+    {
+      "id": "p06",
+      "quantity": 0,
+      "name": "iPhone 13 Pro Max",
+      "image": "/png/iphone-13.png",
+      "isNew": false,
+      "isXit": true,
+      "amount": 3,
+      "productDetails": [
+        {
+          "id": "d06",
+          "battery": "3500 mAh",
+          "power": "2,2 ГГц",
+          "speed": "apple a15 Bionic",
+          "hour": "36 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1500,
+        "disPrice": 1399
+      }
+    }
+  ]
+}

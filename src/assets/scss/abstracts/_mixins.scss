@@ -1,0 +1,76 @@
+@mixin font($fs,$lh,$fw) {
+    font-size: $fs + rem;
+    line-height: $lh + px;
+    font-weight: $fw;
+    color: $white;
+}
+
+@mixin responsive($breakpoints) {
+    @if($breakpoints==mm-phone) {
+        @media only screen and (max-width: 375px) {
+            @content
+        }
+    }
+
+    ;
+@if($breakpoints==m-phone) {
+    @media only screen and ( max-width: 485px) {
+        @content
+    }
+}
+
+;
+
+@if($breakpoints==phone) {
+    @media only screen and (max-width: 576px) {
+        @content
+    }
+}
+
+;
+
+@if($breakpoints==t-phone) {
+    @media only screen and (max-width: 600px) {
+        @content
+    }
+}
+
+;
+
+@if($breakpoints==tables) {
+    @media only screen and (max-width: 779px) {
+        @content
+    }
+}
+
+;
+@if($breakpoints==t-tables) {
+    @media only screen and (max-width: 844px) {
+        @content
+    }
+}
+
+;
+
+@if($breakpoints==audio ) {
+    @media only screen and (max-width: 942px) {
+        @content
+    }
+}
+
+;
+
+@if($breakpoints==big-tables) {
+    @media only screen and (max-width: 1044px) {
+        @content
+    }
+}
+
+;
+
+@if($breakpoints==desktop) {
+    @media only screen and (max-width: 1266px) {
+        @content
+    }
+}
+}
