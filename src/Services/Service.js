@@ -6,10 +6,10 @@ const api = axios.create({
 
 export default {
     getProductItems(){
-        return api.get('/products')
+        return api.get('/products/')
     },
     getCartItems(){
-        return api.get('/cart')
+        return api.get('/cart/')
     },
     postCartItems(pr){
         return api.post('/cart', pr)
