@@ -177,5 +177,28 @@
       }
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "p08",
+      "quantity": 4,
+      "name": "Samsung Galaxy S22 Ultra",
+      "image": "/png/galaxy-s22.webp",
+      "isNew": true,
+      "isXit": true,
+      "amount": 7,
+      "productDetails": [
+        {
+          "id": "d08",
+          "battery": "5000 mAh",
+          "power": "3,3 ГГц",
+          "speed": "Snapdragon 888",
+          "hour": "48 часов"
+        }
+      ],
+      "productPrice": {
+        "price": 1300,
+        "disPrice": 1000
+      }
+    }
+  ]
 }
