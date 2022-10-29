@@ -121,11 +121,26 @@
             .options{
                 display: flex;
                 align-items: center;
-                gap: 15px;
+                gap: 20px;
                 @include responsive(tables){
                   display: none;  
                 }
                 a{
+                    position: relative;
+                    .indicator{
+                        background: #24a19c;
+                        display: inline-block;
+                        position: absolute;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        top: -24%;
+                        right: -35%;
+                        font-size: 12px;
+                        display: grid;
+                        place-items: center;
+                        color: #fff;
+                    }
                     svg{
                         width: 24px;
                         height: 24px;

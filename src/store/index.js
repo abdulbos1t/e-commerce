@@ -6,7 +6,8 @@ export default createStore({
   state: {
     productItems: [],
     cart: [],
-    cartItems: []
+    cartItems: [],
+    filteredCartItems: []
   },
  
   mutations: {
@@ -26,15 +27,31 @@ export default createStore({
         commit("SET_PRODUCT_ITEMS", data)
       })
     },
-    addToCart({commit}, pr){
-      Service.postCartItems(pr).then( res => {
-        commit("UPDATE_CART", res.data)
-      })
+    addToCart({state}, pr){
+      let item = state.cart.find(elem => elem.id === pr.id);
+      if(item === undefined) {
+        Service.postCart({
+          ...pr,
+          quantity: 1
+        })
+      } else{
+        if(pr.quantity < pr.amount){
+          Service.putCartItems( pr.id, {
+            ...pr,
+            quantity: pr.quantity += 1
+          })
+        } else{
+          alert('tugadi')
+        }
+      }
     },
     fetchCartItems({commit},){
       Service.getCartItems().then( res => {
         commit("SET_CART_ITEMS", res.data)
       })
+    },
+    deleteProducts({}, id){
+      Service.deleteProducts(id)
     }
   },
 })

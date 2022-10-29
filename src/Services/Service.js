@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: 'http://localhost:3000'
+    baseURL: 'http://localhost:7777'
 })
 
 export default {
@@ -14,4 +14,13 @@ export default {
     postCartItems(pr){
         return api.post('/cart', pr)
     },
+    postCart(pr){
+        return api.post('/cart/',  pr)
+    },
+    putCartItems(id, pr){
+        return api.put('/cart/' + id, pr)
+    },
+    deleteProducts(id){
+        return api.delete('/cart/' + id)
+    }
 }

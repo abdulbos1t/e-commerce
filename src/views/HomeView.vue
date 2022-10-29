@@ -24,8 +24,7 @@
       </swiper-slide>
     </swiper>
     </div>
-    {{cart}}
-    {{cartItems}}
+    <!-- {{cartItems}} -->
     <div class="container products-container">
         <div class="products">
           <h1 class="title">Все Продукты</h1>
@@ -191,6 +190,7 @@ import "swiper/css/navigation";
   methods: {
     addProduct(pr) {
       this.$store.dispatch("addToCart", pr);
+      this.$store.dispatch("fetchCartItems");
     },
   },
   computed: {
@@ -199,6 +199,7 @@ import "swiper/css/navigation";
         "cart",
         "cartItems"
       ]),
+  
   },
   }
 </script>

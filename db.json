@@ -177,50 +177,5 @@
       }
     }
   ],
-  "cart": [
-    {
-      "id": "p05",
-      "quantity": 0,
-      "name": "Samsung Galaxy S21",
-      "image": "/png/galaxy-s21.png",
-      "isNew": false,
-      "isXit": true,
-      "amount": 4,
-      "productDetails": [
-        {
-          "id": "d05",
-          "battery": "4500 mAh",
-          "power": "3,3 ГГц",
-          "speed": "Snapdragon 888",
-          "hour": "46 часов"
-        }
-      ],
-      "productPrice": {
-        "price": 1200,
-        "disPrice": 1099
-      }
-    },
-    {
-      "id": "p06",
-      "quantity": 0,
-      "name": "iPhone 13 Pro Max",
-      "image": "/png/iphone-13.png",
-      "isNew": false,
-      "isXit": true,
-      "amount": 3,
-      "productDetails": [
-        {
-          "id": "d06",
-          "battery": "3500 mAh",
-          "power": "2,2 ГГц",
-          "speed": "apple a15 Bionic",
-          "hour": "36 часов"
-        }
-      ],
-      "productPrice": {
-        "price": 1500,
-        "disPrice": 1399
-      }
-    }
-  ]
+  "cart": []
 }
